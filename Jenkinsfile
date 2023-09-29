@@ -13,13 +13,13 @@ pipeline{
                 sh 'mvn compile'
             }
         }
-        stage('two'){
+        stage('test'){
             steps{
                 echo 'test maven app'
                 sh 'mvn clean test'
             }
         }
-        stage('three'){
+        stage('package'){
             steps{
                 echo 'package maven app'
                 sh 'mvn package -DskipTests'
