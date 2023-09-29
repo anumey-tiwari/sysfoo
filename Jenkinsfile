@@ -19,7 +19,6 @@ pipeline {
       steps {
         echo 'step 3'
         sleep 5
-        archiveArtifacts 'target/*.war'
       }
     }
 
